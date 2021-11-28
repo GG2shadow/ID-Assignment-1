@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@400;600&display=swap');
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    min-height: 200vh;
+}
+
+/* Transparent Header turns White Background with Black Text on Scroll */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px; 
+    z-index: 100000;
+}
+
+header .logo img {
+    position: relative;
+    transition: 0.6s;
+    display: block;
+    max-width:230px;
+    max-height:95px;        
+    width: auto;
+    height: auto;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+    font-family: 'Outfit', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+header ul li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+}
+
+header.sticky {
+    padding: 5px 100px;
+    background: #fff;
+}
+
+header.sticky .logo,
+header.sticky ul li a {
+    color: #000;
+}
+
+/* Hero Banner: Auto-play Video */
+#hero-banner {
+    height: 900px;
+    display: block;
+    overflow: hidden;
+}
+
+#hero-banner-vid {
+    width: 100%;
+}
+
+#get-ready-for-edg-vs-dk,
+#finals-info {
+    background-color:#fff;
+}
+
+#finals-info img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    width: 15%;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row;
+}
+
+.flex-container > p {
+    width: 100%;
+}
+
+.split {
+    margin: 15px;
+    width: 50%;
+    padding: 20px 250px;
+    font-family: 'Bebas Neue', cursive;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 60px;
+    letter-spacing: 5px;
+}
+
+.align-right {
+    text-align: right;
+}
+
+#cheer-for-team,
+#meet-the-teams {
+    color: #fff;
+}
+
+h2 {
+    font-family: 'Outfit', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 10px;
+}
+
+#team-desc p {
+    font-family: 'Outfit', sans-serif;
+    text-transform: none;
+    font-size: 20px;
+    letter-spacing: normal;
+    line-height: 2;
+}
+
+#team-desc.align-right p {
+    text-align: left;
+}
+
+#team-desc.align-left p {
+    text-align: right;
+}
+
+#team-desc #find-out-more {
+    color: grey;
+}
+
+#team-desc.align-right > h6 {
+    margin: 0;
+    text-align: left;
+}
+
+#team-desc.align-left > h6 {
+    margin: 0;
+    text-align: right;
+}
+
+
+#meet-the-teams .split {
+    padding: 30px;
+}
+
+#team-img-left {
+    min-width: 50%;
+    margin-left: 5%;
+}
+
+#team-img-right {
+    min-width: 50%;
+    margin-right: 5%;
+}
+
+#team-desc.align-right {
+    margin: auto;
+    padding-left: 50px;
+    margin-left: 50px;
+}
+
+#team-desc.align-left {
+    margin: auto;
+    padding-right: 50px;
+    margin-right: 50px;
+}
+
+#get-ready-for-edg-vs-dk h2 {
+    padding-top: 30px;
+}
+
+#get-ready-for-edg-vs-dk iframe {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    max-width: 60%;
+}
