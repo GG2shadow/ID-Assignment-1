@@ -14,13 +14,13 @@
     <header>
         <a href="#" class="logo"><img src="img/lol-logo.png"></a>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Teams</a></li>
-            <li><a href="#">Watch</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#meet-the-teams">Teams</a></li>
+            <li><a href="https://www.twitch.tv/videos/1197592207?filter=all&sort=time" target="_blank">Watch</a></li>
             <li><a href="#">News</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#contact-form">Contact</a></li>
             <li><a href="#">Champions</a></li>
-            <li><a href="#">Play</a></li>
+            <li><a href="https://signup.na.leagueoflegends.com/en/signup/redownload" target="_blank">Play</a></li>
         </ul>
     </header>
     <section id="hero-banner">
@@ -66,5 +66,55 @@
         <h2>Cheer For Your Favourite Team</h2>
         <p style="text-align: center;">Under construction...</p>
     </section>
+
+    <section id="contact-form">
+        <h2>Contact Us</h2>
+        <p>We reply within 3 working days.</p>
+
+        <form action="contact-form.php" method="post">
+            <label for="category">Category:</label><br>    
+            <select name="category" id="category">
+                <option value="press">Press</option>
+                <option value="billing-or-rp-issues">Billing/RP Issues</option>
+                <option value="tech-support">Tech Support</option>
+                <option value="account-recovery">Account Recovery</option>
+                <option value="others">Others</option>
+            </select>
+
+            <br><label>Name:<br>
+                <input type="text" placeholder="eg. Megan"></input>
+            </label>
+
+            <br><label>Email:<br>
+                <input type="email" placeholder="eg. example@abc.com"></input>
+              </label>
+
+            <br><label>Message: (word limit: 500)<br>
+                <textarea name="message" rows="5" cols="100" maxlength="500"></textarea>
+            </label>
+
+            <input id="submit-button" type="submit" value="Submit">
+        </form>
+    </section>
+
+    <footer>
+        <p onclick="scrollToTop()" class="scroll-top">Back To Top</p>
+        <hr>
+        <section class="flex-container">
+            <section id="footer-logo-bar" class="split align-left">
+                <img id="footer-logo-1" src="img/riot-white-logo.png">
+                <img id="footer-logo-2" src="img/lol-esports-logo.png">
+            </section>
+            <section class="split align-right">
+                <p id="copyright-info" class="split align-right">&copy; 2021 YaoJie x Riot Games. All Rights Reserved.</p>
+                <section id="social-media-bar">
+                    <a href="https://twitter.com/lolesports"><img src="img/twitter_logo.svg"></a>
+                    <a href="https://www.facebook.com/lolesports/"><img src="img/facebook_logo.svg"></a>
+                    <a href="https://www.youtube.com/c/lolesports"><img src="img/youtube_logo.svg"></a>
+                    <a href="https://www.instagram.com/lolesports/?hl=en"><img src="img/instagram_logo.svg"></a>
+                </section>
+            </section>
+        </section>
+    </footer>
 </body>
 </html>
