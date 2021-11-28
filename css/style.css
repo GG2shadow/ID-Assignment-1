@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    font-family: 'Outfit', sans-serif;
 }
 
 body {
@@ -81,18 +82,25 @@ header.sticky ul li a {
     width: 100%;
 }
 
+.page-content,
 #contact-form,
 #get-ready-for-edg-vs-dk,
 #finals-info {
     background-color:#fff;
 }
 
+.page-banner img,
 #finals-info img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     padding-top: 30px;
     width: 15%;
+}
+
+.page-banner {
+    margin-top: 8%;
+    padding-top: 60px;
 }
 
 .flex-container {
@@ -126,7 +134,6 @@ footer,
 }
 
 h2 {
-    font-family: 'Outfit', sans-serif;
     text-transform: uppercase;
     font-weight: 600;
     text-align: center;
@@ -136,7 +143,6 @@ h2 {
 
 #contact-form,
 #team-desc p {
-    font-family: 'Outfit', sans-serif;
     text-transform: none;
     font-size: 20px;
     letter-spacing: normal;
@@ -151,8 +157,9 @@ h2 {
     text-align: right;
 }
 
-#team-desc #find-out-more {
+#find-out-more {
     color: grey;
+    text-decoration: none;
 }
 
 #team-desc.align-right > h6 {
@@ -197,12 +204,18 @@ h2 {
     padding-top: 30px;
 }
 
-form,
-#get-ready-for-edg-vs-dk iframe {
+form {
     display: block;
     margin: 0 auto;
     padding-bottom: 50px;
     max-width: 60%;
+}
+
+iframe {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    max-width: 80%;
 }
 
 #contact-form p {
@@ -217,7 +230,6 @@ form,
 .scroll-top {
     text-align: center;
     padding: 30px;
-    font-family: 'Outfit', sans-serif;
     cursor: pointer;
     font-size: 20px;
 }
@@ -249,7 +261,6 @@ hr {
     padding: 0;
     width: 100%;
     font-size: 15px;
-    font-family: 'Outfit', sans-serif;
     text-align: right;
 }
 
@@ -300,6 +311,56 @@ select:focus,
 textarea:focus,
 button:focus {
     outline: none;
+}
+
+#news-header {
+    background-color: #000;
+    color: #fff;
+}
+
+#news-header.sticky .logo,
+#news-header.sticky ul li a {
+    color: #fff;
+}
+
+.publication-info {
+    color: gray;
+}
+
+.news-article {
+    border: 1px #000 solid;
+    margin: 0 120px 50px 120px;
+    padding: 20px;
+}
+
+.news-article p {
+    line-height: 1.6;
+}
+
+.news-article-content,
+#news-catalog {
+    margin: 0;
+    padding-bottom: 50px;
+}
+
+.publication-heading {
+    text-align: left;
+}
+
+.page-content {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.news-article-highlight-img {
+    min-width: 100%;
+}
+
+.page-body {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
 }
 
 @media (max-width: 920px) {
