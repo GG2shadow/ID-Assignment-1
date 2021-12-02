@@ -9,7 +9,6 @@
 
 body {
     background: #000;
-    min-height: 200vh;
 }
 
 /* Transparent Header turns White Background with Black Text on Scroll */
@@ -36,6 +35,7 @@ header .logo img {
     height: auto;
 }
 
+.page-banner ul,
 header ul {
     position: relative;
     display: flex;
@@ -43,6 +43,7 @@ header ul {
     align-items: center;
 }
 
+.page-banner ul li,
 header ul li {
     position: relative;
     list-style: none;
@@ -51,6 +52,7 @@ header ul li {
     font-weight: 600;
 }
 
+.page-banner ul li a,
 header ul li a {
     position: relative;
     margin: 0 15px;
@@ -141,6 +143,7 @@ h2 {
     padding-top: 10px;
 }
 
+#cheer-for-team,
 #contact-form,
 #team-desc p {
     text-transform: none;
@@ -218,6 +221,7 @@ iframe {
     max-width: 80%;
 }
 
+#cheer-for-team p,
 #contact-form p {
     margin-top: 0;
     text-align: center;
@@ -262,6 +266,9 @@ hr {
     width: 100%;
     font-size: 15px;
     text-align: right;
+    font-family: 'Outfit', sans-serif;
+    letter-spacing: normal;
+    text-transform: none;
 }
 
 footer .split {
@@ -335,12 +342,17 @@ button:focus {
 
 .news-article p {
     line-height: 1.6;
+    font-size: 20px;
 }
 
 .news-article-content,
 #news-catalog {
     margin: 0;
     padding-bottom: 50px;
+}
+
+.news-article-content p {
+    font-size: 20px;
 }
 
 .publication-heading {
@@ -363,14 +375,287 @@ button:focus {
     padding: 0;
 }
 
-@media (max-width: 920px) {
+.page-banner ul li a {
+    color: #000;
+}
+
+.champs-spotlight h2,
+.skills-intro h4,
+.champs-split-right > h4,
+.current-page {
+    color: #CEAB5C !important;
+}
+
+.current-champion-cat {
+    color: #CEAB5C !important; 
+    text-decoration: underline !important;
+    text-decoration-thickness: 2px !important;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    background-color: #fff;
+    flex-wrap: wrap;
+    margin: 0 10%;
+    padding: 20px 0 60px 0;
+}
+
+.flex-item {
+    padding: 2%;
+    flex-grow: 1;
+    flex-basis: 15%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #000;
+    margin: 20px 45px;
+}
+
+.flex-item h4 {
+    text-transform: uppercase;
+}
+
+.flex-img img {
+    max-width: 100%;
+}
+
+.flex-item a {
+    text-decoration: none;
+    color: #000;
+}
+
+.flex-info {
+    margin-top: auto;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.champions-info-content {
+    background-image: url("../img/lcs-dragon.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.champions-page-banner {
+    background-color: #000;
+    opacity: 0.83;
+}
+
+.champions-info-content p, 
+.champions-info-content h2 {
+    color: #fff;
+    text-align: center;
+}
+
+.champions-info-content p {
+    font-size: 20px;
+}
+
+.successful-form-submission-msg {
+    color: green;
+}
+
+.skills-container,
+.champs-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.skills-container {
+    margin: 0 0 0 10%;
+}
+
+.skills-split-left {
+    width: 3%;
+}
+
+.skills-split-left img {
+    width: 110%;
+}
+
+.champs-split-left {
+    margin: 0 0 0 10%;
+    width: 40%;
+}
+
+.champs-split-right {
+    display: block;
+    margin: auto 10% auto 80px;
+    width: 60%;
+}
+
+.champs-split-right h4, .champs-split-right p {
+    text-align: left;
+}
+
+.champs-container img {
+    width: 100%;
+    background-size: cover;
+}
+
+.champs-spotlight h2 {
+    font-size: 20px;
+}
+
+.champs-spotlight {
+    margin-top: 80px;
+}
+
+.skills-intro h4,
+.champs-split-right h4 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+}
+
+.skills-intro h4 {
+    margin: 30px 0 0 10%;
+}
+
+.champs-split-right p {
+    margin: 0;
+    padding: 0;
+}
+
+.skill-name,
+p.skill-type {
+    margin: 0;
+    padding: 0;
+    margin-top: 27px;
+    text-align: left;
+}
+
+p.skill-type {
+    color: #CEAB5C;
+}
+
+.skill-name {
+    margin-top: 0;
+}
+
+.skills-split-right {
+    margin-left: 20px;
+}
+
+p.skill-desc {
+    text-align: left;
+    margin-left: 10%;
+}
+
+.news-article a {
+    text-decoration: none;
+    color: #000;
+}
+
+#cheer-for-team p {
+    margin: 0;
+}
+
+p#cheer-team-left {
+    padding: 20px 30% 0 16%;
+    font-size: 30px;
+    font-family: 'Bebas Neue', cursive;
+    line-height: normal;
+}
+
+p#cheer-team-right {
+    padding: 20px 16% 0 30%;
+    font-size: 30px;
+    font-family: 'Bebas Neue', cursive;
+    line-height: normal;
+}
+
+#cheer-for-team img {
+    width: 50%;
+    height: 150px;
+    padding: 0;
+    margin: 0;
+}
+
+img#cheer-team-left {
+    padding: 0 28% 0 14%;
+}
+
+img#cheer-team-right:hover,
+img#cheer-team-left:hover {
+    cursor: pointer;
+}
+
+img#cheer-team-right {
+    padding: 0 14% 0 28%;
+}
+
+div.edg-vs {
+    width: 100%; 
+    height: 20px; 
+    background-color: #4b20c0;
+}
+
+div.dk-vs {
+    width: 100%; 
+    height: 20px; 
+    background-color: #df274e;
+}
+
+div.vs-bar {
+	display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    padding-top: 20px;
+    width: 64%;
+    margin: auto;
+}
+
+div.vs-left {
+	justify-content: flex-start;
+    width: 40%;
+    height: 20px;
+}	
+
+div.vs-right {
+	justify-content: flex-end;
+    width: 60%;
+    height: 20px;
+}	
+
+#meet-the-teams:target:before {
+    content: "";
+    display: block;
+    height: 100px; /* fixed header height*/
+    margin: -100px 0 0; /* negative fixed header height */
+}
+
+#cheer-for-team {
+    min-height: 550px;
+}
+
+#contact-form:target:before {
+    content: "";
+    background-color: black;
+    display: block;
+    height: 100px; /* fixed header height*/
+    margin: -100px 0 0; /* negative fixed header height */
+}
+
+@media 
+only screen 
+and (device-width : 375px) 
+and (device-height : 812px) 
+and (-webkit-device-pixel-ratio : 3) {
     .flex-container {
         flex-flow: column;
     }
 
     html,
     body {
-        
         width: 100%;
         height: 100%;
         margin: 0;

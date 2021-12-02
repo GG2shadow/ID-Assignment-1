@@ -12,14 +12,14 @@
 </head>
 <body>
     <header>
-        <a href="#" class="logo"><img src="img/lol-logo.png"></a>
+        <a href="index.html" class="logo"><img src="img/lol-logo.png"></a>
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a class="current-page" href="index.html">Home</a></li>
             <li><a href="#meet-the-teams">Teams</a></li>
             <li><a href="https://www.twitch.tv/videos/1197592207?filter=all&sort=time" target="_blank">Watch</a></li>
             <li><a href="news.html">News</a></li>
             <li><a href="#contact-form">Contact</a></li>
-            <li><a href="#">Champions</a></li>
+            <li><a href="champions.html">Champions</a></li>
             <li><a href="https://signup.na.leagueoflegends.com/en/signup/redownload" target="_blank">Play</a></li>
         </ul>
     </header>
@@ -64,14 +64,30 @@
 
     <section id="cheer-for-team">
         <h2>Cheer For Your Favourite Team</h2>
-        <p style="text-align: center;">Under construction...</p>
+        <p>Tap on the team's logo to cast a vote.<br>Guess correctly to receive an exclusive in-game Ahri skin.</p>
+        <section class="flex-container">
+            <img id="cheer-team-left" class="split align-left" src="img/edg-logo.png" onclick="changeEDG()">
+            <img id="cheer-team-right" class="split align-right" src="img/dk-logo.png" onclick="changeDK()">
+        </section>
+        <div class="vs-bar">
+            <div class="vs-left">
+                <div class="edg-vs"></div>
+            </div>
+            <div class="vs-right">
+                <div class="dk-vs"></div>
+            </div>
+        </div>
+        <section class="flex-container">
+            <p id="cheer-team-left" class="split align-left">40%<br>(657)</p>
+            <p id="cheer-team-right" class="split align-right">60%<br>(985)</p>
+        </section>
     </section>
 
     <section id="contact-form">
         <h2>Contact Us</h2>
-        <p>We reply within 3 working days.</p>
+        <p>We respond within 3 business days</p>
 
-        <form action="contact-form.php" method="post">
+        <form action="index.html" method="post" onsubmit="successfulFormSubmission()">
             <label for="category">Category:</label><br>    
             <select name="category" id="category">
                 <option value="press">Press</option>
@@ -82,15 +98,19 @@
             </select>
 
             <br><label>Name:<br>
-                <input type="text" placeholder="eg. Megan"></input>
+                <input type="text" placeholder="eg. Megan" pattern="^[A-Za-z \s*]+$"></input>
             </label>
 
             <br><label>Email:<br>
-                <input type="email" placeholder="eg. example@abc.com"></input>
+                <input type="email" placeholder="eg. example@abc.com" required></input>
               </label>
 
+            <br><label>Upload Attachments:<br>
+                <input type="file"></input>
+            </label>
+            
             <br><label>Message: (word limit: 500)<br>
-                <textarea name="message" rows="5" cols="100" maxlength="500"></textarea>
+                <textarea name="message" rows="5" cols="100" maxlength="500" required></textarea>
             </label>
 
             <input id="submit-button" type="submit" value="Submit">
@@ -108,10 +128,10 @@
             <section class="split align-right">
                 <p id="copyright-info" class="split align-right">&copy; 2021 YaoJie x Riot Games. All Rights Reserved.</p>
                 <section id="social-media-bar">
-                    <a href="https://twitter.com/lolesports"><img src="img/twitter_logo.svg"></a>
-                    <a href="https://www.facebook.com/lolesports/"><img src="img/facebook_logo.svg"></a>
-                    <a href="https://www.youtube.com/c/lolesports"><img src="img/youtube_logo.svg"></a>
-                    <a href="https://www.instagram.com/lolesports/?hl=en"><img src="img/instagram_logo.svg"></a>
+                    <a href="https://twitter.com/lolesports" target="_blank"><img src="img/twitter_logo.svg"></a>
+                    <a href="https://www.facebook.com/lolesports/" target="_blank"><img src="img/facebook_logo.svg"></a>
+                    <a href="https://www.youtube.com/c/lolesports" target="_blank"><img src="img/youtube_logo.svg"></a>
+                    <a href="https://www.instagram.com/lolesports/?hl=en" target="_blank"><img src="img/instagram_logo.svg"></a>
                 </section>
             </section>
         </section>
