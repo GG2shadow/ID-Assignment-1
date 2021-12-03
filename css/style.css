@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@400;600&display=swap');
 
+/* Universal */
 * {
     padding: 0;
     box-sizing: border-box;
@@ -85,6 +86,7 @@ header.sticky ul li a {
     width: 100%;
 }
 
+/* Finals Info */
 .page-content,
 #contact-form,
 #get-ready-for-edg-vs-dk,
@@ -134,6 +136,7 @@ iframe {
     border: 0;
 }
 
+/* Cheer For Team Section */
 footer,
 #cheer-for-team,
 #meet-the-teams {
@@ -184,6 +187,7 @@ a.find-out-more > p {
     text-align: right;
 }
 
+/* Meet The Teams Section */
 #meet-the-teams .split {
     padding: 30px;
 }
@@ -230,6 +234,7 @@ iframe {
     max-width: 80%;
 }
 
+/* Contact Form */
 #cheer-for-team p,
 #contact-form p {
     margin-top: 0;
@@ -240,6 +245,7 @@ iframe {
     margin-bottom: 0;
 }
 
+/* Back To Top Button */
 .scroll-top {
     text-align: center;
     padding: 30px;
@@ -255,12 +261,14 @@ hr {
     width: 90%;
 }
 
+/* Footer */
 #footer-logo-bar {
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 
 #footer-logo-bar > img {
@@ -289,6 +297,7 @@ img#footer-logo-2 {
    margin-left: 12px; 
 }
 
+/* Social Media Bar */
 #social-media-bar {
     display: block;
     text-align: right;
@@ -329,6 +338,7 @@ button:focus {
     outline: none;
 }
 
+/* News Catalog and News Article Pages */
 #news-header {
     background-color: #000;
     color: #fff;
@@ -377,6 +387,7 @@ button:focus {
     min-width: 100%;
 }
 
+/* Champions */
 .page-body {
     width: 80%;
     margin-left: auto;
@@ -653,6 +664,7 @@ div.vs-right {
     margin: -100px 0 0; /* negative fixed header height */
 }
 
+/* Mobile Optimisation for iPhone 6/7/8 Plus */
 @media 
 only screen 
 and (max-width : 414px) 
@@ -662,6 +674,7 @@ and (max-height : 736px)
         flex-flow: column-reverse;
     }
 
+    /* Universal */
     html,
     body {
         width: 100%;
@@ -670,7 +683,7 @@ and (max-height : 736px)
         padding: 0;
     }
 
-
+    /* Header (and Navigation Bar) */
     li a[href="index.html"],
     li a[href="index.html#contact-form"],
     li a[href="#contact-form"],
@@ -700,6 +713,7 @@ and (max-height : 736px)
         max-width: 100%;
     }
 
+    /* Finals Info */
     #finals-info .flex-container {
         flex-flow: row;
     }
@@ -719,6 +733,7 @@ and (max-height : 736px)
         width: 50%;
     }
 
+    /* Hero Banner */
     #hero-banner {
         height: 70%;
         display: block;
@@ -789,11 +804,19 @@ and (max-height : 736px)
         height: 300px;
     }
 
+    /* News */
     #news-catalog p,
     #contact-form p {
         font-size: 15px;
     }
 
+    /* Contact Form */
+    #contact-form select,
+    #contact-form input {
+        width: 100%;
+    }
+
+    /* Cheer For Team Section */
     #cheer-for-team p {
         font-size: 15px;
         padding: 0 30px 30px 30px;
@@ -816,11 +839,11 @@ and (max-height : 736px)
     }
 
     p.cheer-team-left {
-        padding: 18px 22% 0 11%;
+        padding: 18px 22% 0 11% !important;
     }
 
     p.cheer-team-right {
-        padding: 18px 9% 0 24%;
+        padding: 18px 9% 0 24% !important;
     }
 
     section#cheer-for-team {
@@ -837,6 +860,7 @@ and (max-height : 736px)
         font-size: 15px;
     }
 
+    /* Footer */
     p.scroll-top {
         margin: 0;
         padding: 30px 25px 25px 25px;
@@ -850,7 +874,7 @@ and (max-height : 736px)
         text-align: center;
     }
 
-    footer section.split {
+    footer div.split {
         width: 100%;
     }
 
@@ -885,12 +909,16 @@ and (max-height : 736px)
         width: 100%;
     }
 
-    .page-content ul {
+    .page-banner {
+        width: 100% !important;
+    }
+
+    .page-banner ul {
         overflow-x: scroll;
         font-size: 12px;
         width: 80%;
         margin: auto;
-        padding-left: 165px;
+        padding-left: 230px;
     }
 
     .flex-info h4,
@@ -902,6 +930,7 @@ and (max-height : 736px)
         margin: 7px;
     }
 
+    /* Champions Page */
     .page-body {
         width: 100%;
     }
