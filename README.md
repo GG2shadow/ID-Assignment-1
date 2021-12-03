@@ -58,7 +58,8 @@ In this section, you should mention all of the languages, frameworks, libraries,
     4. Try to submit the form with an invalid email address and verify that a relevant error message appears.
     5. Try to submit the form with an empty email address and verify that an error message about the required fields appears.
     6. Try to submit the form with an empty message and verify that an error message about the required fields appears.
-    7. Try to submit the form with all inputs valid and verify that a success message appears.
+    7. Try to type more than 500 words in the message section and verify that it is impossible to continue input beyond 500 words.
+    8. Try to submit the form with all inputs valid and verify that a success message appears.
 2. Cross-platform Optimisation:
     1. Go to laptop view and verify that all included content are visible, as intended and working.
     2. Go to iPhone 6/7/8 Plus view and verify that all included content are visible, as intended and working.
