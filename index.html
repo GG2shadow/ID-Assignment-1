@@ -87,7 +87,7 @@
         <h2>Contact Us</h2>
         <p>We respond within 3 business days</p>
 
-        <form action="index.html" method="post" onsubmit="successfulFormSubmission()">
+        <form action="https://formsubmit.co/s10222764@connect.np.edu.sg" method="post" onsubmit="successfulFormSubmission()">
             <label for="category">Category:</label><br>    
             <select name="category" id="category">
                 <option value="press">Press</option>
@@ -98,19 +98,19 @@
             </select>
 
             <br><label>Name:<br>
-                <input type="text" placeholder="eg. Megan" pattern="^[A-Za-z \s*]+$"></input>
+                <input type="text" placeholder="eg. Megan" pattern="^[A-Za-z \s*]+$" name="Name"></input>
             </label>
 
             <br><label>Email:<br>
-                <input type="email" placeholder="eg. example@abc.com" required></input>
+                <input type="email" placeholder="eg. example@abc.com" name="Email" required></input>
               </label>
 
             <br><label>Upload Attachments:<br>
-                <input type="file"></input>
+                <input type="file" name="Attachments"></input>
             </label>
             
             <br><label>Message: (word limit: 500)<br>
-                <textarea name="message" rows="5" cols="100" maxlength="500" required></textarea>
+                <textarea name="Message" rows="5" cols="100" maxlength="500" required></textarea>
             </label>
 
             <input id="submit-button" type="submit" value="Submit">
