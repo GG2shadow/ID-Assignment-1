@@ -60,7 +60,7 @@ header ul li a {
     text-decoration: none;
     color: #fff;
     letter-spacing: 2px;
-    font-weight: 500px;
+    font-weight: 600;
     transition: 0.6s;
 }
 
@@ -130,6 +130,10 @@ header.sticky ul li a {
     text-align: right;
 }
 
+iframe {
+    border: 0;
+}
+
 footer,
 #cheer-for-team,
 #meet-the-teams {
@@ -146,32 +150,32 @@ h2 {
 
 #cheer-for-team,
 #contact-form,
-#team-desc p {
+.team-desc p {
     text-transform: none;
     font-size: 20px;
     letter-spacing: normal;
     line-height: 2;
 }
 
-#team-desc.align-right p {
+.team-desc.align-right p {
     text-align: left;
 }
 
-#team-desc.align-left p {
+.team-desc.align-left p {
     text-align: right;
 }
 
-#find-out-more {
+.find-out-more {
     color: grey;
     text-decoration: none;
 }
 
-#team-desc.align-right > h6 {
+.team-desc.align-right > h6 {
     margin: 0;
     text-align: left;
 }
 
-#team-desc.align-left > h6 {
+.team-desc.align-left > h6 {
     margin: 0;
     text-align: right;
 }
@@ -190,13 +194,13 @@ h2 {
     margin-right: 5%;
 }
 
-#team-desc.align-right {
+.team-desc.align-right {
     margin: auto;
     padding-left: 50px;
     margin-left: 50px;
 }
 
-#team-desc.align-left {
+.team-desc.align-left {
     margin: auto;
     padding-right: 50px;
     margin-right: 50px;
@@ -560,14 +564,14 @@ p.skill-desc {
     margin: 0;
 }
 
-p#cheer-team-left {
+p.cheer-team-left {
     padding: 20px 30% 0 16%;
     font-size: 30px;
     font-family: 'Bebas Neue', cursive;
     line-height: normal;
 }
 
-p#cheer-team-right {
+p.cheer-team-right {
     padding: 20px 16% 0 30%;
     font-size: 30px;
     font-family: 'Bebas Neue', cursive;
@@ -577,20 +581,19 @@ p#cheer-team-right {
 #cheer-for-team img {
     width: 50%;
     height: 150px;
-    padding: 0;
     margin: 0;
 }
 
-img#cheer-team-left {
+img.cheer-team-left {
     padding: 0 28% 0 14%;
 }
 
-img#cheer-team-right:hover,
-img#cheer-team-left:hover {
+img.cheer-team-right:hover,
+img.cheer-team-left:hover {
     cursor: pointer;
 }
 
-img#cheer-team-right {
+img.cheer-team-right {
     padding: 0 14% 0 28%;
 }
 
@@ -648,9 +651,9 @@ div.vs-right {
 
 @media 
 only screen 
-and (device-width : 414px) 
-and (device-height : 736px) 
-and (-webkit-device-pixel-ratio : 3) {
+and (max-width : 414px) 
+and (max-height : 736px) 
+/* and (-webkit-device-pixel-ratio : 3) */ {
     .flex-container {
         flex-flow: column-reverse;
     }
@@ -730,7 +733,7 @@ and (-webkit-device-pixel-ratio : 3) {
         width: 40%;
     }
 
-    section.flex-container {
+    div.flex-container {
         width: 100%;
     }
 
@@ -745,7 +748,7 @@ and (-webkit-device-pixel-ratio : 3) {
         padding: 20px 30px !important;
     }
 
-    section#team-desc {
+    section.team-desc {
         width: 100%;
         margin: 0 !important;
         padding: 0 7% !important;
@@ -761,11 +764,11 @@ and (-webkit-device-pixel-ratio : 3) {
         letter-spacing: 2px;
     }
 
-    a#find-out-more p {
+    a.find-out-more p {
         margin: 0;
     }
 
-    #team-desc p {
+    .team-desc p {
         margin-bottom: 0;
         padding-bottom: 0;
     }
@@ -800,19 +803,19 @@ and (-webkit-device-pixel-ratio : 3) {
         max-height: 60px;
     }
 
-    img#cheer-team-left {
+    img.cheer-team-left {
         padding: 0 23% 0 10%;
     }
 
-    img#cheer-team-right {
+    img.cheer-team-right {
         padding: 0 10% 0 23%;
     }
 
-    p#cheer-team-left {
+    p.cheer-team-left {
         padding: 18px 22% 0 11%;
     }
 
-    p#cheer-team-right {
+    p.cheer-team-right {
         padding: 18px 9% 0 24%;
     }
 
@@ -820,6 +823,7 @@ and (-webkit-device-pixel-ratio : 3) {
         min-height: 370px;
     }
 
+    .news-article-content p,
     .champions-info-content p,
     p.scroll-top,
     select,
@@ -838,7 +842,7 @@ and (-webkit-device-pixel-ratio : 3) {
         text-align: center;
     }
 
-    section#social-media-bar {
+    div#social-media-bar {
         text-align: center;
     }
 
@@ -905,7 +909,7 @@ and (-webkit-device-pixel-ratio : 3) {
     .champs-split-right,
     .champs-split-left{
         margin: auto;
-        padding: auto;
+        /* padding: auto; */
         width: 80%;
     }
 
@@ -942,5 +946,18 @@ and (-webkit-device-pixel-ratio : 3) {
 
     .champs-spotlight iframe {
         height: 250px;
+    }
+
+    .page-banner,
+    .news-article-content {
+        width: 80%;
+        margin: auto;
+    }
+
+    .news-article-content iframe {
+        height: 250px;
+        margin: 0;
+        padding: 0;
+        min-width: 100%;
     }
 }

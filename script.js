@@ -18,13 +18,13 @@ function successfulFormSubmission() {
 function changeEDG() {
     document.querySelector("div.vs-left").style.width = "60%";
     document.querySelector("div.vs-right").style.width = "40%";
-    document.querySelector("p#cheer-team-left").innerHTML = "60%<br>(658)";
-    document.querySelector("p#cheer-team-right").innerHTML = "40%<br>(985)";
+    document.querySelector("p.cheer-team-left").innerHTML = "60%<br>(658)";
+    document.querySelector("p.cheer-team-right").innerHTML = "40%<br>(985)";
 }
 
 function changeDK() {
     document.querySelector("div.vs-left").style.width = "30%";
     document.querySelector("div.vs-right").style.width = "70%";
-    document.querySelector("p#cheer-team-left").innerHTML = "30%<br>(657)";
-    document.querySelector("p#cheer-team-right").innerHTML = "70%<br>(986)";
+    document.querySelector("p.cheer-team-left").innerHTML = "30%<br>(657)";
+    document.querySelector("p.cheer-team-right").innerHTML = "70%<br>(986)";
 }
