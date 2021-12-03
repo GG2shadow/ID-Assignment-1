@@ -12,7 +12,7 @@ function scrollToTop() {
 function successfulFormSubmission() {
     var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November","December"];
     var date = new Date();
-    alert("Form submitted successfully on " + date.getDate() + " " + monthNames[date.getMonth()] + " " + date.getFullYear() + ".\r\nYour support ticket number is #" + (Math.floor(Math.random() * 100000) + 1) + ".\r\nOur support team will reach out to you within 3 working days.\r\nThank you!");
+    alert("Form submitted successfully on " + date.getDate() + " " + monthNames[date.getMonth()] + " " + date.getFullYear() + ".\r\nYour support ticket number is #" + (Math.floor(Math.random() * 100000) + 1) + ".\r\nOur support team will reach out to you within 3 business days.\r\nThank you!");
 }
 
 function changeEDG() {
